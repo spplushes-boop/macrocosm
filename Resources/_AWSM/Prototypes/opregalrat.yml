@@ -1,0 +1,18 @@
+- type: entity
+  id: AwsmMobRatQueenBuff
+  parent: MobRatKingBuff
+  name: rat queen
+  suffix: Matriarch
+  description: She's da rat. She make da roolz.
+  components:
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      200: 1
+      250: 1
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: female
+  - type: RatKing
+    hungerPerArmyUse: 0
+    hungerPerDomainUse: 0
