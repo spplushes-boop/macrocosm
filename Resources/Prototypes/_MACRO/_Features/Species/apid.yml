@@ -1,6 +1,6 @@
 - type: !PartialOnly species
   id: Apid
-  roundStart: &speciesEnabled false # Set this to "true" to enable.
+  roundStart: &speciesEnabled true # Set this to "true" to enable.
 
 - type: !PartialOnly guideEntry
   id: Apid
