@@ -90189,7 +90189,7 @@ entities:
     - type: Transform
       parent: 12
       pos: 60.5,-0.5
-- proto: ComputerBodyScanner
+- proto: computerBodyScanner
   entities:
   - uid: 10977
     components:
