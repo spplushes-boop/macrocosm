@@ -51117,13 +51117,13 @@ entities:
     - type: Transform
       parent: 1
       pos: 39.5,42.5
-- proto: GlassLens
-  entities:
-  - uid: 11676
-    components:
-    - type: Transform
-      parent: 1
-      pos: 38.832596,45.407543
+#- proto: GlassLens
+#  entities:
+#  - uid: 11676
+#    components:
+#    - type: Transform
+#      parent: 1
+#      pos: 38.832596,45.407543
 - proto: GravityGeneratorMini
   entities:
   - uid: 3678
