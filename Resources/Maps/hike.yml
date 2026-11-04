@@ -40081,14 +40081,14 @@ entities:
       parent: 1
       rot: 3.141592653589793 rad
       pos: -48.5,10.5
-- proto: FilingCabinetDrawer
+- proto: filingCabinetDrawer
   entities:
   - uid: 11735
     components:
     - type: Transform
       parent: 1
       pos: 40.5,43.5
-- proto: FilingCabinetDrawerRandom
+- proto: filingCabinetDrawerRandom
   entities:
   - uid: 10517
     components:
@@ -40100,7 +40100,7 @@ entities:
     - type: Transform
       parent: 1
       pos: 35.5,-8.5
-- proto: FilingCabinetTallRandom
+- proto: filingCabinetTallRandom
   entities:
   - uid: 10910
     components:
