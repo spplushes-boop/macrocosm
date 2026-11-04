@@ -155251,7 +155251,7 @@ entities:
       parent: 12
       rot: 3.141592653589793 rad
       pos: -38.5,32.5
-- proto: HydroponicsSoil
+- proto: hydroponicsSoil
   entities:
   - uid: 8161
     components:
@@ -155384,7 +155384,7 @@ entities:
     - type: Transform
       parent: 12
       pos: 76.57687,54.52147
-- proto: HydroponicsTray
+- proto: hydroponicsTray
   entities:
   - uid: 2655
     components:
