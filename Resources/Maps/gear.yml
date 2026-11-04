@@ -89561,7 +89561,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingShoesSandalsBlack
+- proto: ClothingShoesTourist
   entities:
   - uid: 22478
     components:
