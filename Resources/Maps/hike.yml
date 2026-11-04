@@ -55591,7 +55591,7 @@ entities:
     - type: Transform
       parent: 1
       pos: 20.5,-17.5
-- proto: HydroponicsSoil
+- proto: hydroponicsSoil
   entities:
   - uid: 3663
     components:
@@ -55620,7 +55620,7 @@ entities:
     - type: Transform
       parent: 1
       pos: 43.623985,18.856483
-- proto: HydroponicsTray
+- proto: hydroponicsTray
   entities:
   - uid: 797
     components:
