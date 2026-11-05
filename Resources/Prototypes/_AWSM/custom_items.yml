@@ -1,4 +1,4 @@
-﻿# Naming System:
+# Naming System:
 
 # Custom Content Prefix: in this case, it is always "Awsm". Prepended to the whole ID for easy searching, spawning, and testing, as well as to ensure no conflicts with upstream merges or vanilla items.
 # Requester: Part of the item prefix. First name of the character who will be making primary use of this item. Should be 4 or 5 letters, depending on the context.
@@ -135,6 +135,59 @@
         location: Middle
   - type: Item
     size: Tiny
+
+# Requested by Chroma
+- type: entity
+  id: AwsmNovaBlade
+  name: Chroma's Supreme Novablade
+  description: The fearsome weapon of the even more fearsome Chroma Keye.
+  components:
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    attackRate: 0.8 #0.7 and below is too slow
+    angle: 100
+    range: 2.0
+    damage:
+      types:
+        Blunt: 4.5
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: -3
+        variation: 0.250
+    activatedDamage:
+      types:
+        Slash: 100
+        Heat: 100
+  - type: HeldSpeedModifier #slowdown is what balances this compared to a dsword
+    walkModifier: 1
+    sprintModifier: 1
+    weightlessAcceleration: 1
+    zeroGravityModifier: 1
+  - type: UseDelay
+    delay: 1
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/hypereutactic_blade.rsi
+    layers:
+    - state: hypereutactic
+    - state: hypereutactic_blade
+      color: "#FFFFFF"
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+    - state: hypereutactic_gem
+      color: "#FFFFFF"
+      visible: false
+      shader: unshaded
+      map: [ "gem" ]
+  - type: Item
+    size: Small
+    sprite: Objects/Weapons/Melee/hypereutactic_blade_inhands.rsi
+  - type: Reflect
+    reflectProb: 1.0
+    spread: 75
+
 
 # Requested by Annabelle
 - type: entity
