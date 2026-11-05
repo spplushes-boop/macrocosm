@@ -141,7 +141,7 @@
   parent: [ BaseXenoborgContraband, CombatKnife ]
   id: AwsmBelleBioKnife
   name: Annabelle's Bio Knife
-  description: Forged by Elliott at the request of Annabelle.
+  description: One of Annabelle's signature hardlight weapons. Features a bioweapon that rapidly attacks the target's cells.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/bioknife.rsi
@@ -178,7 +178,7 @@
   name: Annabelle's Pistol
   parent: [BaseWeaponBatterySmall, BaseCentcommContraband]
   id: AwsmBelleWeaponPulsePistol
-  description: A state-of-the-art energy weapon modified for use by Annabelle.
+  description: A state-of-the-art energy weapon modified for use by Annabelle. Shoots heated hardlight beams that burn the target while also piercing them like glass.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/pulse_pistol.rsi
@@ -227,6 +227,7 @@
     damage:
       types:
         Heat: 35
+        Piercing: 15
         Caustic: 5
         Shock: 5
         Radiation: 5
@@ -242,6 +243,39 @@
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
       state: impact_beam_xenoborg_heavy
 
+# Requested by Minimin
+- type: entity
+  parent: [BaseShellShotgun, BaseSecurityContraband, ]
+  id: AwsmMiniminSlug
+  name: Minimin's Incendiary Shell (.50 slug)
+  description: Single slug that fires with incendiary power. You don't know why NT doesn't have these themselves. Probably very effective against shapechangers.
+  components:
+  - type: Sprite
+    layers:
+      - state: incendiary
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: AwsmPelletShotgunIncendiarySlug
+  - type: SpentAmmoVisuals
+    state: "incendiary"
+
+# Requested by Minimin
+- type: entity
+  parent: BaseBullet
+  id: AwsmPelletShotgunIncendiarySlug
+  categories: [ HideSpawnMenu ]
+  name: Minimin's incendiary pellet (.50 slug)
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45
+        Structural: 30
+        Heat: 15
+        
 # Requested by Anna
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
@@ -307,7 +341,7 @@
   name: Annabelle's Harm Baton
   parent: [BaseItem, BaseSecurityContraband]
   id: AwsmBelleHarmbaton
-  description: A harm baton for harming people with. Modified for use by Annabelle.
+  description: A harm baton for harming people with. Annabelle totally didn't just put an immovable rod in it.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/stunbaton.rsi
@@ -560,5 +594,4 @@
       - state: classic_vulpkanin
         color: "#F38BAA"
       - state: satin_vulpkanin
-        color: "#3AB3DA"
-        
+        color: "#3AB3DA"        
