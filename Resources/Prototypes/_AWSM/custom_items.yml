@@ -139,7 +139,6 @@
 # Requested by Chroma
 - type: entity
   id: AwsmNovaBlade
-  parent: EnergySword
   name: Chroma's Supreme Novablade
   description: The fearsome weapon of the even more fearsome Chroma Keye.
   components:
