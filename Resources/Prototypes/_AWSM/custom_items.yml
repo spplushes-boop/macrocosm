@@ -1,4 +1,4 @@
-# Naming System:
+﻿# Naming System:
 
 # Custom Content Prefix: in this case, it is always "Awsm". Prepended to the whole ID for easy searching, spawning, and testing, as well as to ensure no conflicts with upstream merges or vanilla items.
 # Requester: Part of the item prefix. First name of the character who will be making primary use of this item. Should be 4 or 5 letters, depending on the context.
@@ -139,12 +139,13 @@
 # Requested by Chroma
 - type: entity
   id: AwsmNovaBlade
+  parent: EnergySword
   name: Chroma's Supreme Novablade
   description: The fearsome weapon of the even more fearsome Chroma Keye.
   components:
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    attackRate: 0.8 #0.7 and below is too slow
+    attackRate: 1.0 #0.7 and below is too slow
     angle: 100
     range: 2.0
     damage:
