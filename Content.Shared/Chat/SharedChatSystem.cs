@@ -88,6 +88,10 @@ public abstract partial class SharedChatSystem : EntitySystem
 
         if (obj.WasModified<EmotePrototype>())
             CacheEmotes();
+        // Starlight - Start - Collective Minds
+        if (obj.WasModified<CollectiveMindPrototype>())
+            CacheCollectiveMinds();
+        // Starlight - End    
     }
 
     private void OnChatMessageLinkClicked(ChatLinkClickedRequestEvent msg, EntitySessionEventArgs args)
@@ -102,10 +106,7 @@ public abstract partial class SharedChatSystem : EntitySystem
             return;
 
         ClickMessageSender(target, ent);
-        // Starlight - Start - Collective Minds
-        if (obj.WasModified<CollectiveMindPrototype>())
-            CacheCollectiveMinds();
-        // Starlight - End
+
     }
 
     private void CacheRadios()
