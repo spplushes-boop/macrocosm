@@ -1,4 +1,4 @@
-﻿namespace Content.Shared.Chat
+﻿﻿namespace Content.Shared.Chat
 {
     /// <summary>
     ///     Chat channels that the player can select in the chat box.
@@ -40,13 +40,6 @@
         ///     Emotes
         /// </summary>
         Emotes = ChatChannel.Emotes,
-
-        // Starlight - Start
-        /// <summary>
-        ///     CollectiveMind
-        /// </summary>
-        CollectiveMind = ChatChannel.CollectiveMind,
-        // Starlight - End
 
         /// <summary>
         ///     Deadchat

@@ -27,7 +27,6 @@ public sealed partial class ChannelFilterPopup : Popup
         ChatChannel.AdminAlert,
         ChatChannel.AdminChat,
         ChatChannel.Server,
-        ChatChannel.CollectiveMind // Starlight - Collective Minds
     };
 
     private readonly Dictionary<ChatChannel, ChannelFilterCheckbox> _filterStates = new();

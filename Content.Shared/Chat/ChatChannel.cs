@@ -80,22 +80,15 @@ namespace Content.Shared.Chat
         /// </summary>
         AdminChat = 1 << 13,
 
-        // Starlight - Start
-        /// <summary>
-        ///     Collective mind channel for entities who have comp.
-        /// </summary>
-        CollectiveMind = 1 << 14,
-        // Starlight - End
-
         /// <summary>
         ///     Unspecified.
         /// </summary>
-        Unspecified = 1 << 15, // Starlight - Collective Minds - Enum value bumped because another variant was added above it.
+        Unspecified = 1 << 14,
 
         /// <summary>
         ///     Channels considered to be IC.
         /// </summary>
-        IC = Local | Whisper | Radio | Dead | Emotes | Damage | Visual | CollectiveMind | Notifications, // Starlight - Collective Minds - Added CollectiveMind entry.
+        IC = Local | Whisper | Radio | Dead | Emotes | Damage | Visual | Notifications,
 
         AdminRelated = Admin | AdminAlert | AdminChat,
     }

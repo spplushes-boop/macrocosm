@@ -1,7 +1,6 @@
 using Content.Server.Mind;
 using Content.Server.Roles;
 using Content.Server.Roles.Jobs;
-using Content.Shared._Starlight.CollectiveMind; // Starlight - Collective Minds
 using Content.Shared.CharacterInfo;
 using Content.Shared.Objectives;
 using Content.Shared.Objectives.Components;
@@ -65,7 +64,6 @@ public sealed partial class CharacterInfoSystem : EntitySystem
             briefing = _roles.MindGetBriefing(mindId);
         }
 
-        TryComp<CollectiveMindComponent>(entity, out var mindsComp); // Starlight - Collective Minds
-        RaiseNetworkEvent(new CharacterInfoEvent(GetNetEntity(entity), job, objectives, briefing, mindsComp?.Minds), args.SenderSession); // Starlight - Collective Minds - mindsComp?.Minds added
+        RaiseNetworkEvent(new CharacterInfoEvent(GetNetEntity(entity), objectives, briefing, job), args.SenderSession);
     }
 }
