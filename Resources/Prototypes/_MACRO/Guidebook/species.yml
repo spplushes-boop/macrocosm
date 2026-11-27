@@ -47,6 +47,11 @@
   text: "/ServerInfo/_MACRO/Guidebook/Mobs/Ovinia.xml"
 
 - type: guideEntry
+  id: Resomi
+  name: species-name-resomi
+  text: "/ServerInfo/_Moffstation/Guidebook/Mobs/Resomi.xml"
+
+- type: guideEntry
   id: Ungu
   name: species-name-ungu
   text: "/ServerInfo/_MACRO/Guidebook/Mobs/Ungu.xml"

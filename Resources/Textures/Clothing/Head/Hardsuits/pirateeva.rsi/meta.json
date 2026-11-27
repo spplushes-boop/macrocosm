@@ -28,6 +28,10 @@
         {
             "name": "equipped-head-unshaded-vox",
             "directions": 4
+        },
+        {
+            "name": "equipped-HELMET-resomi.png",
+            "directions": 4
         }
     ]
 }
