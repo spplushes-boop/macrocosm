@@ -1,0 +1,6 @@
+- type: loadoutEffectGroup
+  id: EffectSpeciesAvali
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Avali

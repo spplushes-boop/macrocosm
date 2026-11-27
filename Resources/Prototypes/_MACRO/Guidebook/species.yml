@@ -17,6 +17,11 @@
   text: "/ServerInfo/_MACRO/Guidebook/Mobs/Apid.xml"
 
 - type: guideEntry
+  id: Avali
+  name: species-name-avali
+  text: "/ServerInfo/_Moffstation/Guidebook/Mobs/Avali.xml"
+
+- type: guideEntry
   id: Decapoid
   name: species-name-decapoid
   text: "/ServerInfo/_MACRO/Guidebook/Mobs/Decapoid.xml"

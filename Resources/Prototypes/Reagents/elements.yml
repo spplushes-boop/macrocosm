@@ -43,9 +43,16 @@
     Bloodstream:
       effects:
       - !type:HealthChange
+        # Moffstation start - Allow avali to drink ammonia
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Avali ]
+          inverted: true
+        # Moffstation end
         damage:
           types:
             Poison: 2
+
 
 - type: reagent
   id: Copper
