@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._Starlight.Flash.Components;
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Clothing.Components;
